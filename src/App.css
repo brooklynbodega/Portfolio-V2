@@ -71,4 +71,19 @@ table {
  .Header a:visited,
  .Header a:active {
   color: rgb(255, 255, 255);
+  text-decoration: none;
  }
+
+ .projects-wrapper {
+   font-size: 2em;
+ }
+
+.projects img {
+  margin-top: 15px;
+  padding: 3px;
+  border: solid rgb(103, 91, 106) 2px;
+  border-radius: 10px;
+  box-shadow: 0 8px 6px -6px black;
+  height: 150pt;
+  width: 300pt;
+} 

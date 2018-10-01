@@ -5,27 +5,27 @@ class Projects extends Component {
   render() {
     return (
       <div class="projects-wrapper">
-        <div class="project-one">
+        <div class="projects" id="one">
           <p>
             <a href="https://brooklynbodega.github.io/Project-01/">
-              Tile Matching
-              {/* <img src="./images/project-1-photo-00.png" alt="project-1"> */}
+              <p>Cell Match</p>
+              <img src={ require("../images/project-1-photo-00.png")} alt="project-1"/>
             </a>
           </p>
         </div>
-        <div class="project-two">
+        <div class="projects" id="two">
           <p>
             <a href="https://project-2-volunteer.herokuapp.com/">
-              CommunityCares
-              {/* <img src="./images/project-2-photo-00.png" alt="project-2"> */}
+              <p>CommunityCares</p>
+              <img src={require("../images/project-2-photo-00.png")} alt="project-2"/>
             </a>
           </p>
         </div>
-        <div class="project-three">
+        <div class="projects" id="three">
           <p>
             <a href="https://lovo.netlify.com/">
-              LoVo
-                {/* <img src="./images/project-4-photo-00.png" alt="project-4"> */}
+              <p>LoVo</p>
+                <img src={require("../images/project-4-photo-00.png")} alt="project-4"/>
             </a>
           </p>
         </div>
