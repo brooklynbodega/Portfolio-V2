@@ -4,8 +4,8 @@ import '../App.css';
 class Projects extends Component {
   render() {
     return (
-      <div className="projects-wrapper">
-        <div className="projects image-container" id="project-one">
+      <div className="Projects-Wrapper">
+        <div className="projects" id="project-one">
           <img className="project-image" id="proj-img-one" src={ require("../images/project-1-photo-00.png")} alt="project-1"/>
           <div className="description">
             <a href="https://brooklynbodega.github.io/Project-01/">
@@ -15,7 +15,7 @@ class Projects extends Component {
             </a>
           </div>
         </div>
-        <div className="projects image-container" id="project-two">
+        <div className="projects" id="project-two">
           <img className="project-image" id="proj-img-two" src={require("../images/project-2-photo-00.png")} alt="project-2"/>
           <div className="description">
             <a href="https://project-2-volunteer.herokuapp.com/">
@@ -25,7 +25,7 @@ class Projects extends Component {
             </a>
           </div>
         </div>
-        <div className="projects image-container" id="project-three">
+        <div className="projects" id="project-three">
           <img className="project-image" id="proj-img-three" src={require("../images/project-4-photo-00.png")} alt="project-4"/>
           <div className="description">
             <a href="https://lovo.netlify.com/">
