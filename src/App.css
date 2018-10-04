@@ -312,7 +312,7 @@ html {
 
 .About {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 2em;
   margin-top: 10px;
   min-height: 570px;
@@ -378,19 +378,33 @@ html {
 
 
 #bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 10px;
   text-align: left;
   line-height: 1.5em;
+  /* margin: 0 auto; */
+  width: 60%;
 }
 
 #bio-text {
-  width: 60%;
-  margin: 0 auto;
   font-style: italic;
+  margin: 0 auto;
+  width: 60%;
 }
 
 .contact {
   margin-top: 10px;
+  margin: 0 auto;
+}
+
+#social-links {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  margin: 0 auto;
+  /* width: 50%; */
 }
 
 #social-links img {
