@@ -6,15 +6,17 @@ class Header extends Component {
   render() {
     return (
       <div className="Header">
-        <p>
-          Raúl Montero
-        </p>
+      <div className="header-title">
+        Raúl Montero
+      </div>
+      <div className="nav">
         <Link to='/projects' >
-       Projects
+          Projects
         </Link><span> </span>
         <Link to='/about'>
-       About
+          About
         </Link>
+        </div>
       </div>
     )
   }
