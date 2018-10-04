@@ -4,9 +4,9 @@ import '../App.css';
 class Projects extends Component {
   render() {
     return (
-      <div className="Projects-Wrapper">
+      <div className="Projects-Wrapper slide-in-blurred-left">
         <div className="projects" id="project-one">
-          <img className="project-image" id="proj-img-one" src={ require("../images/project-1-photo-00.png")} alt="project-1"/>
+          <img className="project-image" id="proj-img-one" src={ require("../images/project-1-photo-03.png")} alt="project-1"/>
           <div className="description">
             <p className="link-title">Cell Match</p>
             <p>A color-matching tile game that cycles through various colors within a set timeframe with increasing difficulty. Written in Javascript with transitions used from Animista.net.

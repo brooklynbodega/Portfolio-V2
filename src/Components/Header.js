@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <div className="Header">
       <div className="header-title">
-        Raúl Montero
+        <span className="logo puff-in-center"> rm</span><span className="sub-title" id="webdev"> Web Developer</span>
       </div>
       <div className="nav">
         <Link to='/projects' >

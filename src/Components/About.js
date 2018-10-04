@@ -4,10 +4,10 @@ import '../App.css';
 class About extends Component {
   render() {
     return (
-      <div className="About">
+      <div className="About slide-in-blurred-right">
         <div id="bio">
          <p id="bio-text">
-          // As a burgeoning developer based in Brooklyn, NY, my passion is to create accessible applications with code that is composed and discernible. I enjoy strategizing paths to success and encourage constructive communication to produce work of the highest quality. My goal is to immerse myself with a brand that is intent on crafting innovative, dynamic programming with an egalitarian ethos.
+          // Hello, I'm Raúl Montero. Previously a financial administrator and now a burgeoning developer based in Brooklyn, NY. Creating accessible applications with code that is composed and discernible is my modus operandi. I enjoy strategizing paths to success and encourage constructive communication to produce work of the highest quality. My goal is to immerse myself with a brand that is intent on crafting innovative, dynamic programming with an egalitarian ethos.
          </p>
         </div>
         <div className="contact">
