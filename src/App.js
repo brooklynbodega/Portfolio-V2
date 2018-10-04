@@ -4,6 +4,7 @@ import './App.css';
 import Projects from './Components/Projects';
 import About from './Components/About';
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 class App extends Component {
   render() {
@@ -11,9 +12,10 @@ class App extends Component {
       <Router>
         <div className="Portfolio">
           <Header />
-            <Route exact path="/" component={Projects}/>
-            <Route exact path="/projects" component={Projects}/>
-            <Route exact path="/about" component={About}/>
+          <Route exact path="/" component={Projects}/>
+          <Route exact path="/projects" component={Projects}/>
+          <Route exact path="/about" component={About}/>
+          <Footer />
         </div>
       </Router>
     );

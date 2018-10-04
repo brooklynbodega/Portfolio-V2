@@ -52,7 +52,7 @@ table {
 /**** END CSS RESET ****/
 
 html {
-  font-family: 'Allerta', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 
@@ -83,7 +83,7 @@ html {
  }
 
  .Header a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: rgb(205, 205, 205);
  }
 
@@ -95,6 +95,8 @@ html {
   display: flex;
   font-size: 2em;
   margin-top: 10px;
+  min-height: 500px;
+  padding: 20px;
   text-align: center;
  }
 
@@ -115,10 +117,6 @@ html {
   color: rgb(255, 255, 255);
 }
 
-.projects a:hover {
-  text-decoration: underline;
-}
-
 .project-image {
   border: solid rgb(0, 0, 0) 2px;
   /* box-shadow: 0 8px 6px -6px black; */
@@ -132,9 +130,10 @@ html {
   border: solid rgba(0, 0, 0, .8) 2px;
   bottom: 0;
   color: rgb(255, 255, 255);
+  font-size: 1em;
   height: 100%;
   width: auto;
-  /* margin-top: 15px; */
+  line-height: 1.5em;
   opacity: 0;
   top: 0;
   padding-left: 20px;
@@ -146,38 +145,88 @@ html {
 
 .link-title {
   font-size: 2em;
+  font-weight: bold;
   margin-bottom: 20px;
   margin-top: 15px;
   text-decoration: underline;
 }
 
-.description > p {
-  font-size: 1em;
-  text-decoration: none;
+
+.project-link {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  margin: 0 auto;
+}
+
+.project-link > a {
+  height: auto;
+  width: auto;
+  padding: 10px;
+  background: rgba(172, 172, 172, 0.8);
+  border-radius: 7px;
+  position: absolute;
+  top: 70%;
+}
+
+.project-link > a:hover {
+  background: rgb(240, 240, 240);
+  color: rgb(36, 36, 36);
 }
 
 .projects:hover .description {
   opacity: 1;
-  /* background-color: rgb(0,0,0); */
 }
 
 /**** END PROJECTS PAGE ****/
 
 /**** ABOUT PAGE ****/
 
+.About {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  margin-top: 10px;
+  min-height: 500px;
+  padding: 10px;
+}
+
 #bio {
   padding: 10px;
-  font-size: 2em;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+#bio-text {
+  width: 60%;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+.contact {
+  margin-top: 10px;
 }
 
 #social-links img {
   height: 50pt;
   width: 50pt;
   margin-right: 10px;
+  /* border-radius: 50px; */
 }
 
 #social-links img:hover {
-  box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 10px 4px -4px black;
 }
 
 /**** END ABOUT PAGE ****/
+
+/**** FOOTER.JS PAGE ****/
+
+.Footer {
+  margin-top: 10px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+/**** END FOOTER.JS PAGE ****/
