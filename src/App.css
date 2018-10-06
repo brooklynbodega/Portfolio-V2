@@ -257,9 +257,12 @@ html {
   border: solid rgba(0, 0, 0, .8) 2px;
   bottom: 0;
   color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
   font-size: 1em;
   height: 100%;
   width: auto;
+  justify-content: space-between;
   line-height: 1.5em;
   opacity: 0;
   top: 0;
@@ -268,6 +271,9 @@ html {
   text-align: left;
   text-decoration: none;
   transition: .7s ease;
+}
+
+.link-text {
 }
 
 .link-title {
@@ -284,6 +290,7 @@ html {
   justify-content: center;
   font-weight: bolder;
   margin: 0 auto;
+  align-self: flex-end;
 }
 
 .project-link > a {
@@ -292,8 +299,8 @@ html {
   padding: 10px;
   background: rgba(172, 172, 172, 0.8);
   border-radius: 7px;
-  position: absolute;
-  top: 70%;
+  /* position: absolute; */
+  /* top: 70%; */
 }
 
 .project-link > a:hover {
@@ -430,3 +437,36 @@ html {
 }
 
 /**** END FOOTER.JS PAGE ****/
+
+
+/**** TABLET SCREEN MEDIAQUERY ****/
+
+@media screen and (max-width: 600px) {
+
+  .Portfolio {
+    background: rgb(0, 8, 255);
+  }
+
+  .Projects-Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+/**** MOBILE SCREEN MEDIAQUERY ****/
+
+@media screen and (max-width: 600px) {
+
+  .Portfolio {
+    background: rgb(0, 8, 255);
+  }
+
+  .Projects-Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}

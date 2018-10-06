@@ -8,9 +8,11 @@ class Projects extends Component {
         <div className="projects" id="project-one">
           <img className="project-image" id="proj-img-one" src={ require("../images/project-1-photo-03.png")} alt="project-1"/>
           <div className="description">
+          <div className="link-text">
             <p className="link-title">Cell Match</p>
             <p>A color-matching tile game that cycles through various colors within a set timeframe with increasing difficulty. Written in Javascript with transitions used from Animista.net.
             </p>
+            </div>
             <div className="project-link">
               <a href="https://brooklynbodega.github.io/Project-01/">
                 V I S I T
