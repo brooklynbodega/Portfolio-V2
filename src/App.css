@@ -19,7 +19,7 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	font: inherit;
-	font-size: 100%;
+	font-size: 1em;
 	border: 0;
 	margin: 0;
 	padding: 0;
@@ -162,7 +162,6 @@ html {
 
  .Projects-Wrapper {
   display: flex;
-  font-size: 2em;
   margin-top: 10px;
   min-height: 570px;
   /* max-height: 570px; */
@@ -226,14 +225,15 @@ html {
    }
  }
 
- .projects {
-  min-height: 50%;
+.projects {
+  min-height: 30%;
+  max-height: 30%;
   width: 50%;
   margin: 0 auto;
   position: relative;
  }
 
- .projects a {
+.projects a {
   text-decoration: none;
  }
 
@@ -250,7 +250,6 @@ html {
   width: 100%;
 }
 
-
 .description {
   background: rgba(0, 0, 0, .8);
   border: solid rgba(0, 0, 0, .8) 2px;
@@ -258,7 +257,7 @@ html {
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
-  font-size: 1em;
+  /* font-size: 1em; */
   height: 100%;
   width: auto;
   justify-content: space-between;
@@ -290,6 +289,7 @@ html {
   font-weight: bolder;
   margin: 0 auto;
   align-self: flex-end;
+  padding: 10px;
 }
 
 .project-link > a {
@@ -439,31 +439,33 @@ html {
 
 /**** TABLET SCREEN MEDIAQUERY ****/
 
-@media screen and (max-width: 600px) {
-
-  .Portfolio {
-    background: rgb(0, 8, 255);
-  }
-
-  .Projects-Wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-}
-
 /**** MOBILE SCREEN MEDIAQUERY ****/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
+
+  html {
+  background: rgb(0, 8, 255);
+  }
 
   .Portfolio {
-    background: rgb(0, 8, 255);
+    font-size: 0.75em;
+  }
+
+  .Header {
+    display: flex;
+    flex-direction: column;
   }
 
   .Projects-Wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .description {
+    /* margin-top: -5px; */
+    padding-left: 0px;
+    top: 0;
+    width: 100%;
   }
 }
