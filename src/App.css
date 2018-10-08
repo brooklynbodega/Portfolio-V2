@@ -383,7 +383,6 @@ html {
   }
 }
 
-
 #bio {
   display: flex;
   flex-direction: column;
@@ -468,5 +467,4 @@ html {
     flex-direction: column;
     align-items: flex-start;
   }
-
 }
