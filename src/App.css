@@ -69,8 +69,9 @@ html {
   color: rgb(34, 34, 34);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   font-size: 3em;
+  font-weight: 300;
   height: 150px;
   padding: 20px;
 }
@@ -85,11 +86,28 @@ html {
   color: rgb(205, 205, 205);
  }
 
+ .header-title {
+
+ }
+
  .logo {
   font-size: 2em;
-  font-weight: bolder;
+  font-weight: 600;
   letter-spacing: -8px;
  }
+
+.sub-title {
+  font-size: .75em;
+  font-weight: 500;
+}
+
+.nav {
+font-size: 0.75em;
+}
+
+#webdev {
+  font-style: italic;
+}
 
  .puff-in-center {
    -webkit-animation: puff-in-center 1s linear both;
@@ -138,20 +156,6 @@ html {
    }
  }
 
-
- .sub-title {
-   font-size: .75em;
-   font-weight: bolder;
- }
-
- #divider {
-  /* font-size: 2em;
-  letter-spacing: -8px; */
- }
-
- #webdev {
-  font-style: italic;
- }
  /**** END HEADER PAGE ****/
 
  /**** PROJECTS PAGE ****/
@@ -254,7 +258,9 @@ html {
   justify-content: space-between;
   line-height: 1.5em;
   opacity: 0;
+  overflow-wrap: break-word;
   padding-left: 20px;
+  padding-right: 10px;
   position: absolute;
   right: -5px;
   text-align: left;
@@ -269,11 +275,10 @@ html {
 
 .link-title {
   font-size: 2em;
-  font-weight: bold;
+  font-weight: 900;
   margin-bottom: 20px;
   margin-top: 15px;
-  overflow-wrap: inherit;
-  text-decoration: underline;
+  overflow-wrap: break-word;
 }
 
 
@@ -281,7 +286,7 @@ html {
   align-self: flex-end;
   display: flex;
   justify-content: center;
-  font-weight: bolder;
+  font-weight: 600;
   margin: 0 auto;
   padding: 10px;
 }
@@ -296,13 +301,8 @@ html {
 }
 
 .project-link > a:link:hover {
-  color: rgb(36, 36, 36);
-}
-
-.project-link > a:hover {
   background: rgb(240, 240, 240);
   color: rgb(36, 36, 36);
-  font-weight: bolder;
 }
 
 .projects:hover .description {
@@ -424,15 +424,17 @@ html {
 
 .Footer {
   margin-top: 10px;
-  font-size: 1.5em;
-  font-weight: 700;
+  font-size: 0.75em;
 }
 
 /**** END FOOTER.JS PAGE ****/
 
-/**** TABLET SCREEN MEDIAQUERY ****/
 
-/**** MOBILE SCREEN MEDIAQUERY ****/
+/****************************************/
+
+/******* TABLET SCREEN MEDIAQUERY *******/
+
+/******* MOBILE SCREEN MEDIAQUERY *******/
 
 @media screen and (max-width: 500px) {
 
@@ -444,20 +446,19 @@ html {
     font-size: 0.75em;
   }
 
+  /**** HEADER.JS PAGE ****/
   .Header {
-    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.5em;
     justify-content: space-evenly;
-    flex-direction: column;
   }
+  /**** END HEADER.JS PAGE ****/
 
-  .nav {
-    font-size: 0.75em;
-  }
-
+  /**** PROJECTS.JS PAGE ****/
   .Projects-Wrapper {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
+    flex-direction: column;
   }
   .projects {
     min-height: 50%;
@@ -466,64 +467,37 @@ html {
    }
 
   .description {
-    display: flex;
-    flex-direction: column;
     font-size: .75em;
     height: auto;
-    width: auto;
     line-height: 1.25em;
     margin: 0px 1px 3px 0px;
-    overflow-wrap: break-word;
     padding: 0px 10px;
-    transition: .7s ease;
-  }
-
-  .link-text {
-    overflow-wrap: break-word;
   }
 
   .link-title {
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    overflow-wrap: break-word;
-    text-decoration: underline;
+    margin: 10px 0px;
   }
 
   .project-link {
     align-self: auto;
-    display: flex;
-    justify-content: center;
-    font-weight: bolder;
-    margin: 0 auto;
-    padding-bottom: 10px;
   }
 
   .project-link > a {
-    background: rgba(172, 172, 172, 0.8);
-    border-radius: 7px;
-    height: auto;
-    width: auto;
     letter-spacing: 2px;
     padding: 6px;
   }
-
-
+  /**** END PROJECTS.JS PAGE ****/
+  
   /**** ABOUT PAGE ****/
-
   .About {
-    display: flex;
-    flex-direction: row;
-    font-size: 1em;
-    min-height: 300px;
-    padding: 20px;
+    font-size: 1e
   }
 
   #profile-photo {
       height: 90%;
       width: 90%;
   }
-
+/*///////// ENDED HERE /////////////*/
   #bio {
     display: flex;
     flex-direction: column;
