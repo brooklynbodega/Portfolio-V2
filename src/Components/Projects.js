@@ -15,7 +15,7 @@ class Projects extends Component {
             </div>
             <div className="project-link">
               <a href="https://brooklynbodega.github.io/Project-01/">
-                V I S I T
+                VISIT
               </a>
             </div>
           </div>
@@ -30,7 +30,7 @@ class Projects extends Component {
             </div>
             <div className="project-link">
               <a href="https://project-2-volunteer.herokuapp.com/">
-                V I S I T
+                VISIT
               </a>
             </div>
           </div>
@@ -45,7 +45,7 @@ class Projects extends Component {
             </div>
             <div className="project-link">
               <a href="https://lovo.netlify.com/">
-                V I S I T
+                VISIT
               </a>
             </div>
           </div>
