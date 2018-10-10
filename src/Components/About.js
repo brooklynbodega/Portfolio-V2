@@ -6,7 +6,7 @@ class About extends Component {
     return (
       <div className="About slide-in-blurred-right">
         <div className="photo">
-          <img src={require("../images/profile-photo-01.jpg")} alt="profile photo" title="profile photo" id="profile-photo" />
+          <img src={require("../images/profile-photo-01.jpg")} alt="profile photo" title="profile photo"/>
         </div>
         <div id="bio">
          <div id="bio-text">
