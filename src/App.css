@@ -216,14 +216,13 @@ font-size: 0.75em;
   display: flex;
   margin: 0 auto;
   height: 300px;
+  max-height: 950px;
+  max-width: 1200px;
   padding: 0px 20px;
   text-align: center;
 }
 
 .projects {
-  /* min-height: 30%;
-  max-height: 30%; */
-  /* width: 50%; */
   margin: 0 auto;
   position: relative;
  }
@@ -305,6 +304,21 @@ font-size: 0.75em;
 
 .projects:hover .description {
   opacity: 1;
+}
+
+#project-one {
+  max-height: 300px;
+  max-width: 400px;
+}
+
+#project-two {
+  max-height: 300px;
+  max-width: 400px;
+}
+
+#project-three {
+  max-height: 300px;
+  max-width: 400px;
 }
 
 /**** END PROJECTS PAGE ****/
@@ -453,7 +467,7 @@ font-size: 0.75em;
   }
 
   .projects {
-    width: 100%;
+    /* width: 100%; */
   }
 
   .description {
@@ -503,40 +517,48 @@ font-size: 0.75em;
   /**** PROJECTS.JS PAGE ****/
   .Projects-Wrapper {
     flex-direction: column;
-    height: auto;
+    height: 100%;
   }
 
   .projects {
-    /* height: auto; */
-    width: 70%;
+    /* width: 70%; */
    }
 
   .description {
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     height: auto;
-    margin: 0px 1px 3px 0px;
+    line-height: 1.5em;
+    margin: 0px 1px -2px 0px;
     padding: 0px 10px;
   }
 
   .link-title {
-    margin: 10px 0px;
+    font-size: 2em;
+    margin: 15px 0px;
   }
 
   .link-desc {
-
+    font-size: 1em;
   }
 
-  .project-link {
+  #project-one {
+    flex-grow: 1;
+    height: 200px;
   }
 
-  .project-link > a {
+  #project-two {
+    flex-grow: 1;
+    height: 200px;
   }
+
+  #project-three {
+    flex-grow: 1;
+    height: 200px;
+  }
+
   /**** END PROJECTS.JS PAGE ****/
   
   /**** ABOUT PAGE ****/
-
-   .About {
-   }
 
    .photo {
      width: 50%;
