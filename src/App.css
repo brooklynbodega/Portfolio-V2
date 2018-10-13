@@ -59,6 +59,8 @@ html {
 /**** APP.JS PAGE ****/
 
 .Portfolio {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /**** END APP.JS PAGE ****/
@@ -66,10 +68,10 @@ html {
 /**** HEADER PAGE ****/
 
 .Header {
+  align-items: flex-end;
   color: rgb(34, 34, 34);
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   font-size: 3em;
   font-weight: 300;
   height: 120px;
@@ -87,7 +89,6 @@ html {
  }
 
  .header-title {
-
  }
 
  .logo {
@@ -217,7 +218,6 @@ font-size: 0.75em;
   margin: 0 auto;
   height: 300px;
   max-height: 950px;
-  max-width: 1200px;
   padding: 0px 20px;
   text-align: center;
 }
@@ -384,6 +384,7 @@ font-size: 0.75em;
   justify-content: center;
   margin: 0 auto;
   min-height: 300px;
+  max-width: 1200px;
   padding: 0px 20px;
 }
 
@@ -398,10 +399,9 @@ font-size: 0.75em;
   border-radius: 50%;
   height: 275px;
   width: 200px;
-  /* min-height: 83%;
-  max-height: 83%;
-  min-width: 65%;
-  max-width: 65%; */
+  /* height: 100%;
+  width: 50%; */
+  opacity: 0.8;
 }
 
 #bio {
@@ -449,11 +449,12 @@ font-size: 0.75em;
 }
 
 /**** END FOOTER.JS PAGE ****/
-/****************************************/
 
+/***************END LAPTOP***************/
 /******* TABLET SCREEN MEDIAQUERY *******/
 
 @media screen and (max-width: 1000px) {
+  /**** HEADER.JS PAGE ****/
   .Header {
     font-size: 2em;
   }
@@ -461,13 +462,11 @@ font-size: 0.75em;
   .logo {
     letter-spacing: -8px;
   }
+  /**** END HEADER.JS PAGE ****/
 
+  /**** PROJECTS.JS PAGE ****/
   .Projects-Wrapper {
     height: 200px;
-  }
-
-  .projects {
-    /* width: 100%; */
   }
 
   .description {
@@ -493,9 +492,9 @@ font-size: 0.75em;
     letter-spacing: 2px;
     padding: 6px;
   }
- 
 }
 
+/***************END TABLET***************/
 /******* MOBILE SCREEN MEDIAQUERY *******/
 
 @media screen and (max-width: 650px) {
@@ -520,12 +519,7 @@ font-size: 0.75em;
     height: 100%;
   }
 
-  .projects {
-    /* width: 70%; */
-   }
-
   .description {
-    /* font-size: 1.2em; */
     height: auto;
     line-height: 1.5em;
     margin: 0px 1px -2px 0px;
@@ -555,16 +549,13 @@ font-size: 0.75em;
     flex-grow: 1;
     height: 200px;
   }
-
   /**** END PROJECTS.JS PAGE ****/
   
   /**** ABOUT PAGE ****/
-
    .photo {
      width: 50%;
      display: flex;
      justify-content: flex-end;
-     /* margin: auto 0; */
      margin-top: 20px;
      padding-right: 20px;
    }
@@ -576,7 +567,7 @@ font-size: 0.75em;
    }
 
   #bio {
-    flex-direction: column;
+    /* flex-direction: column; */
     line-height: 1.2em;
   }
 
@@ -604,7 +595,6 @@ font-size: 0.75em;
   #social-links img:hover {
     box-shadow: 0 10px 4px -4px black;
   }
-
   /**** END ABOUT PAGE ****/
 
   /**** FOOTER.JS PAGE ****/
@@ -614,8 +604,17 @@ font-size: 0.75em;
   /**** END FOOTER.JS PAGE ****/
 }
 
+/***************END MOBILE***************/
+/******* TINY MOBILE MEDIAQUERY *******/
+
 @media screen and (max-width: 425px) {
   .description {
     font-size: 1em;
   }
+
+  #bio-text {
+    font-size: 0.75em;
+  }
+
 }
+/*************END TINY MOBILE*************/
