@@ -69,11 +69,11 @@ html {
   color: rgb(34, 34, 34);
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
   font-size: 3em;
   font-weight: 300;
-  height: 150px;
-  padding: 20px;
+  height: 120px;
+  padding: 20px 20px 40px 20px;
 }
  .Header a:link,
  .Header a:visited,
@@ -93,20 +93,18 @@ html {
  .logo {
   font-size: 2em;
   font-weight: 600;
-  letter-spacing: -8px;
+  letter-spacing: -10px;
  }
 
 .sub-title {
   font-size: .75em;
   font-weight: 500;
+  font-style: italic;
+  letter-spacing: -2px;
 }
 
 .nav {
 font-size: 0.75em;
-}
-
-#webdev {
-  font-style: italic;
 }
 
  .puff-in-center {
@@ -217,15 +215,15 @@ font-size: 0.75em;
 .Projects-Wrapper {
   display: flex;
   margin: 0 auto;
-  min-height: 300px;
+  height: 300px;
   padding: 0px 20px;
   text-align: center;
 }
 
 .projects {
-  min-height: 30%;
-  max-height: 30%;
-  width: 50%;
+  /* min-height: 30%;
+  max-height: 30%; */
+  /* width: 50%; */
   margin: 0 auto;
   position: relative;
  }
@@ -288,7 +286,7 @@ font-size: 0.75em;
   justify-content: center;
   font-weight: 600;
   margin: 0 auto;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 .project-link > a {
@@ -441,13 +439,52 @@ font-size: 0.75em;
 
 /******* TABLET SCREEN MEDIAQUERY *******/
 
+@media screen and (max-width: 1000px) {
+  .Header {
+    font-size: 2em;
+  }
+
+  .logo {
+    letter-spacing: -8px;
+  }
+
+  .Projects-Wrapper {
+    height: 200px;
+  }
+
+  .projects {
+    width: 100%;
+  }
+
+  .description {
+    line-height: 1em;
+    padding-left: 15px;
+    padding-right: 7px;
+  }
+
+  .link-title {
+     font-size: 1.25em;
+   }
+
+  .link-desc {
+     font-size: .75em;
+   }
+
+  .project-link {
+    align-self: auto;
+    padding-bottom: 6px;
+  }
+
+  .project-link > a {
+    letter-spacing: 2px;
+    padding: 6px;
+  }
+ 
+}
+
 /******* MOBILE SCREEN MEDIAQUERY *******/
 
-@media screen and (max-width: 500px) {
-
-  html {
-  /* background: rgb(0, 8, 255); */
-  }
+@media screen and (max-width: 650px) {
 
   .Portfolio {
     font-size: 0.75em;
@@ -458,25 +495,25 @@ font-size: 0.75em;
     align-items: center;
     flex-direction: column;
     font-size: 2.5em;
-    justify-content: space-evenly;
+    height: 100px;
+    padding: 10px;
   }
   /**** END HEADER.JS PAGE ****/
 
   /**** PROJECTS.JS PAGE ****/
   .Projects-Wrapper {
-    align-items: flex-start;
     flex-direction: column;
+    height: auto;
   }
+
   .projects {
-    min-height: 50%;
-    max-height: 50%;
+    /* height: auto; */
     width: 70%;
    }
 
   .description {
-    font-size: .75em;
+    font-size: 1.2em;
     height: auto;
-    line-height: 1.25em;
     margin: 0px 1px 3px 0px;
     padding: 0px 10px;
   }
@@ -485,19 +522,19 @@ font-size: 0.75em;
     margin: 10px 0px;
   }
 
+  .link-desc {
+
+  }
+
   .project-link {
-    align-self: auto;
   }
 
   .project-link > a {
-    letter-spacing: 2px;
-    padding: 6px;
   }
   /**** END PROJECTS.JS PAGE ****/
   
   /**** ABOUT PAGE ****/
- 
-/*///////// ENDED EDITING HERE /////////////*/
+
    .About {
    }
 
@@ -553,4 +590,10 @@ font-size: 0.75em;
     font-size: 1em;
   }
   /**** END FOOTER.JS PAGE ****/
+}
+
+@media screen and (max-width: 425px) {
+  .description {
+    font-size: 1em;
+  }
 }

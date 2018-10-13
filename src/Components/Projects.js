@@ -10,7 +10,7 @@ class Projects extends Component {
           <div className="description">
           <div className="link-text">
             <p className="link-title">Cell Match</p>
-            <p>A color-matching tile game that cycles through various colors within a set timeframe with increasing difficulty. Written in Javascript with transitions used from Animista.net.
+            <p className="link-desc">A color-matching tile game that cycles through various colors within a set timeframe with increasing difficulty. Written in Javascript with transitions used from Animista.net.
             </p>
             </div>
             <div className="project-link">
@@ -25,7 +25,7 @@ class Projects extends Component {
           <div className="description">
           <div className="link-text">
             <p className="link-title">CommunityCares</p>
-            <p>A CRUD app developed with Express and Node.js that allows users to create and share volunteer projects.
+            <p className="link-desc">A CRUD app developed with Express and Node.js that allows users to create and share volunteer projects.
             </p>
             </div>
             <div className="project-link">
@@ -40,7 +40,7 @@ class Projects extends Component {
           <div className="description">
           <div className="link-text">
             <p className="link-title">LoVo</p>
-            <p>A user-facing database to assist citizens in finding information on their direct representatives at all government levels using the ProPublica API, Google Civic API, and React.
+            <p className="link-desc">A user-facing database to assist citizens in finding information on their direct representatives at all government levels using the ProPublica API, Google Civic API, and React.
             </p>
             </div>
             <div className="project-link">
