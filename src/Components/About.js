@@ -10,7 +10,15 @@ class About extends Component {
         </div>
         <div id="bio">
          <div id="bio-text">
-          Hello, I'm Raúl Montero. Previously a financial administrator turned burgeoning developer based in Brooklyn, NY. Creating accessible applications with code that is composed and discernible is my modus operandi. I enjoy strategizing paths to success and encourage constructive communication to produce work of the highest quality. My goal is to immerse myself with a brand that is intent on crafting innovative, dynamic programming with an egalitarian ethos.
+          <h3 className="tagline">Hey there, I'm Raúl Montero.</h3>
+          <br></br>
+          <p>
+          Previously a financial administrator turned full stack developer based in Brooklyn, NY. Creating accessible applications with code that is composed and discernible is my modus operandi. I enjoy strategizing paths to success and encourage constructive communication to produce work of the highest quality.
+          </p>
+          <br></br>
+          <p>
+            My goal is to immerse myself with a brand that is intent on crafting innovative, dynamic programming with an egalitarian ethos.
+          </p>
          </div>
           <div className="contact">
             <div id="social-links">
