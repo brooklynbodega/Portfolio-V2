@@ -455,8 +455,8 @@ font-size: 0.75em;
 /**** END FOOTER.JS PAGE ****/
 
 /***************END LAPTOP***************/
+/****** SMALLER SCREEN MEDIAQUERY ******/
 
-/******SMALLER SCREEN FOR ABOUT.JS******/
 @media screen and (max-width: 1150px) {
    .bio-text {
      /* width: 75%; */
@@ -465,6 +465,7 @@ font-size: 0.75em;
    }
 }
 
+/********** END SMALLER SCREEN **********/
 /******* TABLET SCREEN MEDIAQUERY *******/
 
 @media screen and (max-width: 1000px) {
@@ -512,7 +513,6 @@ font-size: 0.75em;
 }
 
 /***************END TABLET***************/
-
 /******* SMALL TABLET MEDEIAQUERY *******/
 
 @media screen and (max-width: 890px) {
@@ -544,7 +544,8 @@ font-size: 0.75em;
   transition: 0.7s ease-in;
 }
 
-/******* MOBILE SCREEN MEDIAQUERY *******/
+/********* END SMALL TABLET *********/
+/***** MOBILE SCREEN MEDIAQUERY *****/
 
 @media screen and (max-width: 650px) {
 
@@ -588,17 +589,14 @@ font-size: 0.75em;
   }
 
   #project-one {
-    /* flex-grow: 1; */
     height: 200px;
   }
 
   #project-two {
-    /* flex-grow: 1; */
     height: 200px;
   }
 
   #project-three {
-    /* flex-grow: 1; */
     height: 200px;
   }
   /**** END PROJECTS.JS PAGE ****/
