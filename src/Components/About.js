@@ -8,8 +8,8 @@ class About extends Component {
         <div className="photo">
           <img src={require("../images/profile-photo-01.jpg")} alt="profile photo" title="profile photo"/>
         </div>
-        <div id="bio">
-         <div id="bio-text">
+        <div className="bio">
+         <div className="bio-text">
           <h3 className="tagline">Hey there, I'm Raúl Montero.</h3>
           <br></br>
           <p>
@@ -21,7 +21,7 @@ class About extends Component {
           </p>
          </div>
           <div className="contact">
-            <div id="social-links">
+            <div className="social-links">
               <a href="https://www.linkedin.com/in/raul-montero/">
                 <img src={ require("../images/linkedin-logo.svg")} alt="linkedin" title="linkedin"/>
               </a>

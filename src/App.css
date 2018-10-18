@@ -68,6 +68,7 @@ html {
 /**** HEADER PAGE ****/
 
 .Header {
+  transition: 1s ease-in;
   align-items: flex-end;
   color: rgb(34, 34, 34);
   display: flex;
@@ -220,6 +221,7 @@ font-size: 0.75em;
   max-height: 950px;
   padding: 0px 20px;
   text-align: center;
+  transition: .7s ease;
 }
 
 .projects {
@@ -263,7 +265,7 @@ font-size: 0.75em;
   text-align: left;
   text-decoration: none;
   top: 0;
-  transition: .7s ease;
+  transition: 0.7s ease-in;
 }
 
 .link-text {
@@ -277,7 +279,6 @@ font-size: 0.75em;
   margin-top: 15px;
   overflow-wrap: break-word;
 }
-
 
 .project-link {
   align-self: flex-end;
@@ -396,13 +397,13 @@ font-size: 0.75em;
 }
 
 .photo > img {
-  /* border-radius: 50%; */
   height: 320px;
   width: 220px;
   opacity: 0.8;
+  transition: 0.7s ease-in;
 }
 
-#bio {
+.bio {
   display: flex;
   align-content: stretch;
   align-items: flex-start;
@@ -414,8 +415,8 @@ font-size: 0.75em;
   width: 50%;
 }
 
-#bio-text {
-  width: 65%;
+.bio-text {
+  width: 80%;
 }
 
 .tagline {
@@ -426,19 +427,19 @@ font-size: 0.75em;
   margin-top: 10px;
 }
 
-#social-links {
+.social-links {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
 }
 
-#social-links img {
+.social-links img {
   height: 30pt;
   width: 30pt;
   margin-right: 10px;
 }
 
-#social-links img:hover {
+.social-links img:hover {
   box-shadow: 0 10px 4px -4px black;
 }
 
@@ -455,21 +456,22 @@ font-size: 0.75em;
 
 /***************END LAPTOP***************/
 
-/****************            ************/
+/******SMALLER SCREEN FOR ABOUT.JS******/
 @media screen and (max-width: 1150px) {
-   #bio-text {
-     width: 75%;
-     font-size: 0.9em;
+   .bio-text {
+     /* width: 75%; */
+      font-size: 0.9em;
+      transition: .7s ease;
    }
 }
-
 
 /******* TABLET SCREEN MEDIAQUERY *******/
 
 @media screen and (max-width: 1000px) {
   /**** HEADER.JS PAGE ****/
   .Header {
-    font-size: 2em;
+    /* font-size: 2.5em; */
+    transition: .7s ease;
   }
 
   .logo {
@@ -480,12 +482,14 @@ font-size: 0.75em;
   /**** PROJECTS.JS PAGE ****/
   .Projects-Wrapper {
     height: 200px;
+    transition: .7s ease;
   }
 
   .description {
     line-height: 1em;
     padding-left: 15px;
     padding-right: 7px;
+    transition: .7s ease;
   }
 
   .link-title {
@@ -509,12 +513,35 @@ font-size: 0.75em;
 
 /***************END TABLET***************/
 
-/****************            ************/
+/******* SMALL TABLET MEDEIAQUERY *******/
+
 @media screen and (max-width: 890px) {
-  #bio-text {
-    width: 90%;
+  .bio-text {
     font-size: 0.75em;
+    transition: .7s ease;
   }
+}
+
+/******* MOBILE SCREEN MEDIAQUERY *******/
+/******* SMALL TABLET MEDIAQUERY *******/
+
+@media screen and (max-width: 710px) {
+
+  .Header {
+    font-size: 2.5em;
+    transition: .7s ease;
+  }
+
+  .bio-text {
+    width: 90%;
+  }
+}
+
+.social-links img {
+  height: 25pt;
+  width: 25pt;
+  margin-right: 5px;
+  transition: 0.7s ease-in;
 }
 
 /******* MOBILE SCREEN MEDIAQUERY *******/
@@ -523,15 +550,17 @@ font-size: 0.75em;
 
   .Portfolio {
     font-size: 0.75em;
+    transition: 0.7s ease-in;
   }
 
   /**** HEADER.JS PAGE ****/
   .Header {
     align-items: center;
     flex-direction: column;
-    font-size: 2.5em;
+    font-size: 2em;
     height: 100px;
     padding: 10px;
+    transition: 0.7s ease-in;
   }
   /**** END HEADER.JS PAGE ****/
 
@@ -539,6 +568,7 @@ font-size: 0.75em;
   .Projects-Wrapper {
     flex-direction: column;
     height: 100%;
+    transition: 0.7s ease-in;
   }
 
   .description {
@@ -546,6 +576,7 @@ font-size: 0.75em;
     line-height: 1.5em;
     margin: 0px 1px -2px 0px;
     padding: 0px 10px;
+    transition: 0.7s ease-in;
   }
 
   .link-title {
@@ -575,39 +606,36 @@ font-size: 0.75em;
   /**** ABOUT PAGE ****/
   .About {
     height: 100%;
+    /* transition: 0.7s ease-in; */
   }
 
   .photo > img {
     height: 220px;
     width: 150px;
+    transition: 1s ease-in;
   }
 
-  #bio {
-    /* display: inline-block; */
+  .bio {
     height: 100%;
-    /* justify-content: space-evenly; */
     line-height: 1.1em;
+    /* transition: 0.4s ease-in; */
   }
 
-  #bio-text {
-    /* width: 80%; */
+  .bio-text {
   }
 
-  .contact {
-    /* bottom: 0; */
-    /* left: 1; */
-  }
-
-  #social-links img {
+  .social-links img {
     height: 20pt;
     width: 20pt;
     margin-right: 5px;
+    transition: 0.7s ease-in;
   }
   /**** END ABOUT PAGE ****/
 
   /**** FOOTER.JS PAGE ****/
   .Footer {
     font-size: 1em;
+    transition: 0.7s ease-in;
   }
   /**** END FOOTER.JS PAGE ****/
 }
@@ -618,21 +646,23 @@ font-size: 0.75em;
 @media screen and (max-width: 480px) {
   .description {
     font-size: 1em;
+    transition: .7s ease;
   }
 
-  #bio {
+  .bio {
     line-height: 1em;
+    transition: .7s ease;
   }
 
-  #bio-text {
-    font-size: 0.70em;
+  .bio-text {
+    transition: .7s ease;
   }
 
-  #social-links img {
+  .social-links img {
     height: 15pt;
     width: 15pt;
     margin-right: 3px;
+    transition: .7s ease;
   }
-
 }
 /*************END TINY MOBILE*************/
