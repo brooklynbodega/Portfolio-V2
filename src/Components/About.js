@@ -13,7 +13,7 @@ class About extends Component {
           <h3 className="tagline">Hey there, I'm Raúl Montero.</h3>
           <br></br>
           <p>
-          Previously a financial administrator turned full stack developer based in Brooklyn, NY. Creating accessible applications with code that is composed and discernible is my modus operandi. I enjoy strategizing paths to success and encourage constructive communication to produce work of the highest quality.
+          A full stack developer with a background in project coordination based in Brooklyn, NY. Creating accessible applications with code that is composed and discernible is my modus operandi. I enjoy strategizing paths to success and encourage constructive communication to produce work of the highest quality.
           </p>
           <br></br>
           <p>
